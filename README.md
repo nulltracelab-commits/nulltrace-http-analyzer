@@ -1,18 +1,3 @@
-# Nulltrace HTTP Security Headers Analyzer
-
-A lightweight Python cybersecurity tool for analyzing HTTP security headers and identifying potentially missing security protections.
-
-## About
-
-Nulltrace HTTP Security Headers Analyzer examines HTTP response headers, evaluates selected security-related configurations, and provides risk information, recommendations, and a weighted security score.
-## Features
-
-- HTTP response header analysis
-- Detection of missing security headers
-- Weighted security scoring system
-- Risk level classification
-- Security recommendations for missing headers
-- Connection error and timeout handling
 
 # Nulltrace HTTP Security Headers Analyzer
 
