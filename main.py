@@ -69,16 +69,19 @@ score = 0
 max_score = 0
 
 for header, data in security_headers.items():
-        max_score += data["weight"] 
-if header in response.headers:  
+    max_score += data["weight"]
+
+    if header in response.headers:
         print(f"[+] {header}: PRESENT")
         score += data["weight"]
-else:
+    else:
         print(f"[-] {header}: MISSING")
         print(f"    Risk: {data['risk']}")
-print(f"    Issue: {data['description']}")
-print(f"    Recommendation: {data['recommendation']}")
+        print(f"    Issue: {data['description']}")
+        print(f"    Recommendation: {data['recommendation']}")
+
 percentage = (score / max_score) * 100
+
 
 print("\n==============================")
 print("     NULLTRACE SECURITY SCORE")
