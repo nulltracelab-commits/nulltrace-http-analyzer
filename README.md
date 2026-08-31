@@ -40,18 +40,31 @@ Do uruchomienia projektu wymagane są:
 1. Sklonuj repozytorium:
 
 ```bash
-git clone https://github.com/TWOJ-USERNAME/nulltrace-http-analyzer.git
+git clone https://github.com/nulltracelab-commits/nulltrace-http-analyzer
+```
+2. Przejdź do folderu projektu:
+```bash
 cd nulltrace-http-analyzer
+```
+3. Zainstaluj wymagane biblioteki:
+
+```bash
 python -m pip install -r requirements.txt
+```
+
 ## Uruchomienie
 
 Uruchom program za pomocą:
 
 ```bash
 python main.py
+```
 Po uruchomieniu podaj domenę, którą chcesz przeanalizować:
 
+```text
 Enter target URL: example.com
+```
+
 Program automatycznie utworzy adres HTTPS, pobierze nagłówki odpowiedzi i przeprowadzi ich analizę bezpieczeństwa.
 ## Przykładowy wynik
 
